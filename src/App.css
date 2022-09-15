@@ -1,0 +1,66 @@
+
+.main-card{
+  /* display: flex; */
+  /* max-width: 25%; */
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  margin-top: 3rem;
+  color:#1b1f77;
+ 
+}
+
+.bookmarkIcon{    
+  margin-left: 5rem;
+  font-size: larger;
+  color: black;
+}
+
+.byAuthor{
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.cards{
+  /* display: flex; */
+  margin: 5px;
+  font-size: large;
+  max-height: 250px;
+  max-width: 350px;
+
+}
+.headlines{
+  color: black    ;
+}
+
+.headlines :hover{
+  transition: all 1s;
+  text-decoration: none;
+  animation: rotatefont 1s linear infinite alternate-reverse;
+}
+
+@keyframes rotatefont {
+  0% { 
+    transform: scale(1.0);
+  }
+  100%{
+    transform: scale(0.98 );
+  }
+}
+
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
